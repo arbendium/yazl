@@ -1,0 +1,28 @@
+{
+  "type": "module",
+  "name": "@arbendium/yazl",
+  "version": "0.0.1",
+  "description": "A zipping library based on yazl",
+  "author": "Keijo Kapp <keijo.kapp@gmail.com>",
+  "repository": "github:arbendium/yazl",
+  "license": "ISC",
+  "exports": {
+    ".": "./index.js",
+    "./lowlevel": "./lowlevel.js"
+  },
+  "files": [
+    "index.js",
+    "lowlevel.js"
+  ],
+  "scripts": {
+    "lint": "eslint *.js",
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "@arbendium/eslint-config-base": "^0.2.2",
+    "eslint": "^8.51.0"
+  },
+  "dependencies": {
+    "buffer-crc32": "^0.2.13"
+  }
+}
